@@ -1,3 +1,4 @@
+/// <reference path="../../e2e-tests/typings/angularjs/angular.d.ts" />
 'use strict';
 angular.module('AddressSection', []);
 var AddressSection;
@@ -7,10 +8,11 @@ var AddressSection;
         function AddressSectionDirective() {
             this.restrict = "E";
             this.replace = true;
-            this.template = "<div>" +
-                " <div>Address 1 : <input type=\"text\" ng-model=\"address1\"></div><br/>" +
-                " <div>Address 2 : <input type=\"text\" ng-model=\"address2\"></div><br/>" +
-                "</div>";
+            this.template = "<form><div>" +
+                "<br/><div>Address 1 : <input type='text' ng-model='address1'></div>" +
+                "<br/><div>Address 2 : <input type='text' ng-model='address2'></div>" +
+                "<br/><div>ZipCode : <input type='text' ng-model='zipcode' validate-number></div>" +
+                "</div></form>";
             this.controller = 'AddressSectionCtrl';
             this.controllerAs = 'Ctrl';
             this.scope = {};

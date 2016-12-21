@@ -1,3 +1,5 @@
+/// <reference path="../../e2e-tests/typings/angularjs/angular.d.ts" />
+
 'use strict';
 
 angular.module('AddressSection',[])
@@ -10,10 +12,11 @@ module AddressSection
     {
         public restrict: string = "E";
         public replace: boolean = true;
-        public template: string = "<div>" +
-            " <div>Address 1 : <input type=\"text\" ng-model=\"address1\"></div><br/>" +
-            " <div>Address 2 : <input type=\"text\" ng-model=\"address2\"></div><br/>" +
-            "</div>";
+        public template: string = "<form><div>" +
+            "<br/><div>Address 1 : <input type='text' ng-model='address1'></div>"+
+            "<br/><div>Address 2 : <input type='text' ng-model='address2'></div>"+
+            "<br/><div>ZipCode : <input type='text' ng-model='zipcode' validate-number></div>"+
+            "</div></form>";
         public controller: string = 'AddressSectionCtrl';
         public controllerAs: string = 'Ctrl';
         public scope = {};
