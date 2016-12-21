@@ -8,7 +8,6 @@ module ValidateNumber
 {
     interface IValidateNumberScope  extends ng.IScope
     {
-    	zipcode: string;
     }
     
     class ValidateNumberDirective implements ng.IDirective
@@ -22,7 +21,7 @@ module ValidateNumber
         link(scope : IValidateNumberScope, elements : ng.IAugmentedJQuery, attrs : ng.IAttributes) {
 
                 elements.bind('blur', function() {
-                    if(!Number(scope.zipcode)){
+                    if(!Number(angular.element(elements[0]).val())){
                             angular.element(elements[0]).css('border-color','red');
                         }else{
                             angular.element(elements[0]).css('border-color', 'initial')
