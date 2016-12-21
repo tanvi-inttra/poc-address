@@ -1,7 +1,7 @@
 
 # POC Address - Angular Seed TypeScript
 
-AngularJS using TypeScript that has address section with Number Validation
+AngularJS using TypeScript that has address section with Number Validation and String Characters Validation is referenced from POC-USER git project
 
 This is based on https://github.com/angular/angular-seed. If you are curious about how the conversion of the JS project was done to the TS project checkout [CONVERSION.md](./CONVERSION.md).
 

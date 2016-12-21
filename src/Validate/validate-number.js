@@ -12,7 +12,7 @@ var ValidateNumber;
         };
         ValidateNumberDirective.prototype.link = function (scope, elements, attrs) {
             elements.bind('blur', function () {
-                if (!Number(angular.element(elements[0]).val())) {
+                if ((angular.element(elements[0]).val() != "") && (!Number(angular.element(elements[0]).val()))) {
                     angular.element(elements[0]).css('border-color', 'red');
                 }
                 else {

@@ -21,7 +21,7 @@ module ValidateNumber
         link(scope : IValidateNumberScope, elements : ng.IAugmentedJQuery, attrs : ng.IAttributes) {
 
                 elements.bind('blur', function() {
-                    if(!Number(angular.element(elements[0]).val())){
+                    if((angular.element(elements[0]).val() != "") && (!Number(angular.element(elements[0]).val()))){
                             angular.element(elements[0]).css('border-color','red');
                         }else{
                             angular.element(elements[0]).css('border-color', 'initial')

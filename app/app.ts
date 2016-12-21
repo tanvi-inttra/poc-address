@@ -2,4 +2,4 @@
 
 // Declare app level module which depends on views, and components
 
-angular.module('myApp', ['AddressSection', 'ValidateNumber']);
+angular.module('myApp', ['AddressSection', 'ValidateNumber', 'ValidateString']);
