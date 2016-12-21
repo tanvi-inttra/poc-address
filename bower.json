@@ -1,9 +1,12 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS using TypeScript",
-  "version": "0.0.0",
-  "homepage": "https://github.com/Microsoft/TypeScriptSamples/angular1",
-  "license": "MIT",
+  "name": "poc-address-angular-seed",
+  "description": "AngularJS using TypeScript that has address section with Number Validation",
+  "version": "0.0.1",
+  "homepage": "https://github.com/tanvi-inttra/poc-address",
+  "repository": {
+  "type": "git",
+  "url": "git://github.com/tanvi-inttra/poc-address.git"
+  },
   "private": true,
   "dependencies": {
     "angular": "~1.4.0",
